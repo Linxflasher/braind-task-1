@@ -1,0 +1,49 @@
+.status-label {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 4px 8px;
+  font-size: 10px;
+  line-height: 14px;
+  text-transform: uppercase;
+  color: white;
+  border-radius: 2px;
+}
+
+.status-text {
+  color: #afafaf;
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.status-label + .status-text {
+  margin-top: 8px;
+}
+
+.status.approved .status-label {
+  background-color: #50ad01;
+}
+
+.status.moderation .status-label {
+  background-color: #50ad01;
+  opacity: 0.6;
+}
+
+.status.unapproved .status-label {
+  background-color: #a0a0a0;
+}
+
+@media screen and (max-width: 560px) {
+  .status {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &-label {
+      order: 2;
+
+      + .status-text {
+        margin: 0;
+      }
+    }
+  }
+}

@@ -1,0 +1,35 @@
+.appreciation-list {
+  display: flex;
+  align-items: center;
+  margin: 6px 0;
+
+  li {
+    color: #afafaf;
+    font-size: 12px;
+    line-height: 20px;
+
+    + li {
+      margin-left: 15px;
+    }
+
+    span {
+      font-weight: bold;
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .appreciation-list {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .appreciation-list li {
+    width: 50%;
+
+    + li {
+      margin-left: 0;
+    }
+  }
+}

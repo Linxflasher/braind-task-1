@@ -1,0 +1,18 @@
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 70px);
+  grid-auto-rows: 70px;
+  gap: 10px 10px;
+
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 1px solid #ebebea;
+
+    img {
+        display: block;
+    }
+  }
+}

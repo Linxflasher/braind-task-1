@@ -1,0 +1,35 @@
+.notification {
+  padding: 30.5px 20px 30.5px 50px;
+  background-color: #f7f7f7;
+
+  &__message {
+    padding-left: 25px;
+    color: rgba(56, 56, 56, 0.8);
+    font-size: 15px;
+    line-height: 24px;
+    position: relative;
+
+    &::before {
+      content: "!";
+      position: absolute;
+      top: 4px;
+      left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 15px;
+      height: 15px;
+      background-color: #ff6d00;
+      color: white;
+      font-size: 10px;
+      line-height: 14px;
+      border-radius: 50%;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .notification {
+    padding: 30px;
+  }
+}

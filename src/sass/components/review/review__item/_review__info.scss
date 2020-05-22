@@ -1,0 +1,53 @@
+.review__info.expanded .review__container {
+  height: auto;
+  overflow: auto;
+}
+
+.review__container {
+  height: 80px;
+  overflow: hidden;
+}
+
+.review__info.expanded .review__expand::after {
+  transform: rotate(-180deg);
+}
+
+.review__text {
+  color: #332f29;
+  font-size: 12px;
+  line-height: 20px;
+  letter-spacing: 0.25px;
+
+  &.declined {
+    color: #979797;
+  }
+}
+
+.review__expand {
+  margin-top: 7px;
+  display: inline-block;
+  padding-right: 15px;
+  color: #ff6d00;
+  font-size: 11px;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 4px;
+    right: 0;
+    width: 10px;
+    height: 6px;
+    background: url("../img/arr-bottom.svg") 0 0 no-repeat;
+    transition: transform 0.2s;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .review__expand {
+    font-size: 14px;
+    &::after {
+      top: 7px;
+    }
+  }
+}

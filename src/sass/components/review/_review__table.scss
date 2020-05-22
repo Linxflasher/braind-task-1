@@ -1,0 +1,19 @@
+.review__table {
+
+  &__heading {
+    display: grid;
+    grid-template-columns: 75px 180px 1fr 125px 150px;
+    padding: 10px 0;
+    border: 1px solid #f2f2f2;
+
+    li {
+      color: #979797;
+      font-size: 13px;
+      line-height: 18px;
+
+      &:first-child {
+          padding-left: 17px;
+      }
+    }
+  }
+}

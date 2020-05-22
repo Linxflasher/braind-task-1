@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1,
+h2 {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+button {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.reviews {
+  width: 100%;
+  max-width: 970px;
+  margin: 130px auto 0;
+  padding: 0 20px 100px;
+
+  &__title {
+    color: #383838;
+    font-size: 20px;
+    line-height: 27px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .reviews {
+    margin-top: 70px;
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .reviews {
+    margin-top: 20px;
+    padding-bottom: 20px;
+  }
+}

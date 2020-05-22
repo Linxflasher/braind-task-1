@@ -1,0 +1,68 @@
+<section class="review__table">
+    <ul class="review__table__heading">
+        <li>Фото</li>
+        <li>Наименование товара</li>
+        <li>Ваши отзывы</li>
+        <li>Статус отзыва</li>
+        <li>Действия</li>
+    </ul>
+
+    <article class="review__item">
+        <div class="review__picture">
+            <img src="./dist/img/img-1.png" alt="Дрель" />
+        </div>
+        <p class="review__name">Дрель ударная BOSCH PSB 550 RЕ, БЗП Арт.0603130020</p>
+
+            <div class="review__main">
+                <!-- @include ../_rating.kit -->
+                <!-- @include ../_appreciation-list.kit -->
+                <!-- @include review__info/_review__info.kit -->
+            </div>
+            <div class="review__status">
+                <div class="status approved">
+                    <div class="status-label">Опубликован</div>
+                    <p class="status-text">1 августа, 2018</p>
+                </div>
+            </div>
+            <div class="review__additional">
+                <button class="review__additional__btn">Дополнить отзыв</button>
+            </div>
+            
+    </article>
+
+    <article class="review__item addition">
+        <div class="review__main">
+            <h2>Дополненный отзыв</h2>
+            <p>Год прошел, работает как пушка!</p>
+            <!-- @include ../_gallery.kit -->
+        </div>
+        <div class="review__status">
+            <div class="status moderation">
+                <div class="status-label">На модерации</div>
+                <p class="status-text">19 августа, 2018</p>
+            </div>
+        </div>
+        <div class="review__additional">
+        </div>
+    </article>
+
+    <article class="review__item">
+        <div class="review__picture">
+            <img src="./dist/img/img-2.png" alt="Декоративный экран" />
+        </div>
+        <p class="review__name">Декоративный металлический экран на радиатор 3-х секционный 3 ДМЭР</p>
+
+            <div class="review__main">
+                <p class="review__text declined">К сожалению, ваш отзыв не прошёл модерацию.</p>
+            </div>
+            <div class="review__status">
+                <div class="status unapproved">
+                    <div class="status-label">Не опубликован</div>
+                    <p class="status-text">23 июня, 2019</p>
+                </div>
+            </div>
+            <div class="review__additional">
+            </div>
+            
+    </article>
+</section>
